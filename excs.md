@@ -19,3 +19,8 @@
 <image src="/screens/screen3_3.jpg" alt="Linux">
 <image src="/screens/screen3_4.jpg" alt="Linux">
 <image src="/screens/screen3_5.jpg" alt="Linux">
+
+**Задание 4.**
+Установить и удалить deb-пакет с помощью dpkg
+<image src="/screens/screen4.jpg" alt="Linux">
+<image src="/screens/screen4_1.jpg" alt="Linux">
