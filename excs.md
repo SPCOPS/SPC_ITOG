@@ -9,3 +9,13 @@
 **Задание 2.**
 Создать директорию, переместить файл туда.
 <image src="/screens/screen2.jpg" alt="Linux">
+
+**Задание 3.**
+Подключить дополнительный репозиторий MySQL. Установить любой пакет
+из этого репозитория.
+<image src="/screens/screen3.jpg" alt="Linux">
+<image src="/screens/screen3_1.jpg" alt="Linux">
+<image src="/screens/screen3_2.jpg" alt="Linux">
+<image src="/screens/screen3_3.jpg" alt="Linux">
+<image src="/screens/screen3_4.jpg" alt="Linux">
+<image src="/screens/screen3_5.jpg" alt="Linux">
