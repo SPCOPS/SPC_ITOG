@@ -209,3 +209,23 @@ DELETE FROM camels;
 SELECT Name, Birthday, Decrees FROM hoss
 UNION SELECT  Name, Birthday, Decrees FROM donkeys;
 ```
+
+**Задание 11.**
+Создать новую таблицу “молодые животные” в которую попадут все
+животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью
+до месяца подсчитать возраст животных в новой таблице.
+
+```
+CREATE TEMPORARY TABLE beasts AS 
+SELECT *, 'Лошади' AS TypeID FROM hoss
+UNION SELECT *, 'Ослы' AS TypeID FROM donkeys
+UNION SELECT *, 'Собаки' AS TypeID FROM woofs
+UNION SELECT *, 'Кошки' AS TypeID FROM meows
+UNION SELECT *, 'Хомяки' AS TypeID FROM hams;
+
+CREATE TABLE animkids AS
+SELECT Name, Birthday, Decrees, TypeID, TIMESTAMPDIFF(MONTH, Birthday, CURDATE()) AS AgeMonth
+FROM beasts WHERE Birthday BETWEEN ADDDATE(curdate(), INTERVAL -3 YEAR) AND ADDDATE(CURDATE(), INTERVAL -1 YEAR);
+ 
+SELECT * FROM animkids;
+```
